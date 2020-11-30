@@ -16,8 +16,8 @@
       <InputRelativeSourceDir></InputRelativeSourceDir>
       <Include></Include>
       <ExcludeFromBuild>false</ExcludeFromBuild>
-      <Config Condition="'$(Platform)'=='Win32'">-m x86 -DARCH_X86_64=0 -DPREFIX -DHAVE_ALIGNED_STACK=0</Config>
-      <Config Condition="'$(Platform)'=='x64'">-m amd64 -DARCH_X86_64=1 -DHAVE_ALIGNED_STACK=1</Config>
+      <Config Condition="'$(Platform)'=='Win32'">-m x86 -DARCH_X86_64=0 -DPREFIX -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1</Config>
+      <Config Condition="'$(Platform)'=='x64'">-m amd64 -DARCH_X86_64=1 -DHAVE_ALIGNED_STACK=1 -DHAVE_CPUNOP=1</Config>
     </Yasm>
   </ItemDefinitionGroup>
   
@@ -58,7 +58,7 @@
     >
     <ItemGroup>
       <_Yasm>
-        <Include>%(Include) -I%(RootDir)%(Directory)</Include>
+        <Include>%(Include) -I%(RootDir)%(Directory) -I%(RootDir)%(Directory)..</Include>
         <OutputDir Condition="'%(OutputDir)' == '.\'"></OutputDir>
         <RelativeOutputDir>%(OutputDir)</RelativeOutputDir>
         <OutputDir>$(ProjectDir)%(OutputDir)</OutputDir>
