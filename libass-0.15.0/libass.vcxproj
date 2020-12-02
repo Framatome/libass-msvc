@@ -100,7 +100,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>$(SolutionDir)/harfbuzz-2.6.7/src;$(SolutionDir)/compat;$(SolutionDir)/fribidi-1.0.10/lib;$(SolutionDir)/freetype-2.10.4/include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)/harfbuzz-2.7.2/src;$(SolutionDir)/compat;$(SolutionDir)/fribidi-1.0.10/lib;$(SolutionDir)/freetype-2.10.4/include;$(IncludePath)</IncludePath>
     <TargetExt>.lib</TargetExt>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>

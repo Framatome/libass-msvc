@@ -4,11 +4,10 @@ The library versions you need are the following:
 - fribidi-1.0.10
 - freetype-2.10.4
 - libass-0.15.0
-- harfbuzz-2.6.7
+- harfbuzz-2.7.2
 
 Make sure yasm.exe is in your path for asm optimizations.
-For compilation msvc2013 or higher is required (the test doesn't compile with msvc2013
-though)
+For compilation msvc2015 or higher is required
 
 Now open libass.sln and you should be able to compile all projects.
 
